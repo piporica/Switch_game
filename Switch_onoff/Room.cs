@@ -16,25 +16,38 @@ namespace Switch_onoff
 
         //상태값들
         public bool IsNeed { get; set; }
-        public bool IsOn { get; set; }
+        public bool IsSwitchOn { get; set; }
+        public bool IsConnect { get; set; }
+        public int boomCount { get; set; }
+
 
         public Room(string id, Panel panel, List<string> nexts)
         {
             this.Id = id;
             this.Panel = panel;
             this.Nexts = nexts;
+            this.boomCount = 5;
         }
 
         public void SwitchOn()
         {
-            this.IsOn = true;
-            this.Panel.ForeColor = Color.Red;
+           IsSwitchOn = true;
+           Panel.BackColor = Color.Red;
         }
         public void SwitchOff()
         {
-            this.IsOn = false;
-            this.Panel.ForeColor = Color.RoyalBlue;
+            IsSwitchOn = false;
+            Panel.BackColor = Color.RoyalBlue;
+        }   
+        public void connectOn()
+        {
+            IsConnect = true;
+            Panel.ForeColor = Color.Yellow;
         }
-
+        public void connectOff()
+        {
+            IsConnect = true;
+            Panel.ForeColor = Color.White;
+        }
     }
 }

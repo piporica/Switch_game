@@ -8,3 +8,6 @@ C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.csp
 C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.csproj.CoreCompileInputs.cache
 C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.exe
 C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.pdb
+D:\switch_onoff\Switch_onoff\bin\Debug\Switch_onoff.exe.config
+D:\switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.exe
+D:\switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.pdb

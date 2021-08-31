@@ -8,13 +8,13 @@ using System.Windows.Forms;
 
 namespace Switch_onoff
 {
-    class Node
+    class Road
     {
         private List<Panel> panels; //노드를 구성하는 패널
         public string id; //양 옆 방 아이디 이어서 쓴 것
         public bool isOn;
 
-        public Node(string id, List<Panel> pList)
+        public Road(string id, List<Panel> pList)
         {
             this.id = id;
             this.panels = pList;
@@ -25,7 +25,7 @@ namespace Switch_onoff
             isOn = true;
             foreach (Panel p in panels)
             {
-                p.ForeColor = Color.Yellow;
+                p.BackColor = Color.Yellow;
             }
         }
         public void setMagicOff()
@@ -33,7 +33,7 @@ namespace Switch_onoff
             isOn = false;
             foreach (Panel p in panels)
             {
-                p.ForeColor = Color.Lime;
+                p.BackColor = Color.Lime;
             }
         }
     }
