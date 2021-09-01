@@ -1,0 +1,9 @@
+C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\bin\Release\Switch_onoff.exe.config
+C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\bin\Release\Switch_onoff.exe
+C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\bin\Release\Switch_onoff.pdb
+C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Release\Switch_onoff.Switch_game.resources
+C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Release\Switch_onoff.Properties.Resources.resources
+C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Release\Switch_onoff.csproj.GenerateResource.cache
+C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Release\Switch_onoff.csproj.CoreCompileInputs.cache
+C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Release\Switch_onoff.exe
+C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Release\Switch_onoff.pdb

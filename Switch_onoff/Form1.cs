@@ -17,19 +17,22 @@ namespace Switch_onoff
     public partial class Switch_game : Form
     {
         private Game game;
-        private Hashtable rooms;
-        private Hashtable roads;
+        private Hashtable rooms = new Hashtable();
+        private Hashtable roads = new Hashtable();
 
         public Switch_game()
         {
             InitializeComponent();
-            makeRoomhash();
+            InitGame();
         }
 
-        private void InitSwitchNode()
+        private void InitGame()
         {
+            rooms = makeRoomhash();
+            roads = makeRoadhash();
 
-
+            game = new Game(rooms, roads);
+            setneedSwitchText();
         }
 
         //방 초기 세팅
@@ -43,6 +46,7 @@ namespace Switch_onoff
             for(int i = 0 ; i < datalines.Length ; i++)
             {
                 string dataline = datalines[i];
+                dataline = dataline.Replace("\r", "");
                 string[] roomData = dataline.Split(' ');
 
                 List <string> nexts = new List<string>();
@@ -79,7 +83,7 @@ namespace Switch_onoff
             return list;
         }
         //길 초기 세팅
-        private void initRoad()
+        private Hashtable makeRoadhash()
         {
             Hashtable roadHash = new Hashtable();
             List<Panel> roadPanels = makeRoadPanelList();
@@ -96,9 +100,11 @@ namespace Switch_onoff
                     List<Panel> newList = new List<Panel>();
                     newList.Add(p);
                     Road newRoad = new Road(id, newList);
+                    roadHash.Add(id, newRoad);
                 }
-                p.Click += new EventHandler(test_road);
             }
+
+            return roadHash;
          }
 
         private List<Panel> makeRoadPanelList()
@@ -138,20 +144,129 @@ namespace Switch_onoff
 
         #region events
 
-        public void test(object sender, EventArgs e)
+        public void RoomClick(object sender, MouseEventArgs e)
         {
-            string strControlName = ((Control)sender).Tag.ToString();
-            MessageBox.Show(strControlName);
+            if(e.Button == MouseButtons.Left)
+            {
+                string roomName = ((Control)sender).Tag.ToString();
+                game.RoomClicked(roomName);
+            }
+            else if(e.Button == MouseButtons.Right && game.IsSettingMode)
+            {
+                string roomName = ((Control)sender).Tag.ToString();
+                bool isneed = game.setNeedroom(roomName);
+
+                Label label = findLabel(roomName);
+                if (isneed) label.Text = "★" + label.Text;
+                else label.Text = label.Text.Substring(1);
+            }
+        }
+
+        public void settingClick(object sender, EventArgs e)
+        {
+            game.IsSettingMode = !game.IsSettingMode;
+            checkClear();
+            if (game.IsSettingMode)
+            {
+                game.settingON();
+                turns.Text = "1";
+                setting_btn.Text = "세팅모드 OFF";
+                turn_comp.Enabled = false;
+                label18.Visible = true;
+                label19.Visible = true;
+            }
+            else
+            {
+                turns.Text = "1";
+                setting_btn.Text = "세팅모드 ON";
+                turn_comp.Enabled = true;
+                label18.Visible = false;
+                label19.Visible = false;
+
+                game.settingOff();
+                setneedSwitchText();
+            }
+        }
+
+        public void setneedSwitchText()
+        {
+            string t = "";
+            foreach(Room r in game.needRoom)
+            {
+                Label l = findLabel(r.Id);
+                t += l.Text;
+                if (r.IsSwitchOn) t = t + ": ON";
+                else t = t + ": OFF";
+                t += "  ";
+            }
+            sw_state.Text = t;
+
+            if (game.isStarConnected()) tt_state.Text = "OK";
+            else tt_state.Text = "NO";
+        }
+        
+        public void checkClear()
+        {
+            if (game.isClear())
+            {
+                label20.Visible = true;
+                turn_comp.Enabled = false;
+            }
+            else
+            {
+                label20.Visible = false;
+                turn_comp.Enabled = true;
+            }
         }
 
 
-        public void test_road(object sender, EventArgs e)
+
+        public void turnPlus(object sender, EventArgs e)
         {
-            string strControlName = ((Control)sender).Tag.ToString();
-            MessageBox.Show(strControlName);
+            game.turnIncrease();
+            setneedSwitchText();
+            turns.Text = game.turn.ToString();
+            checkClear();
+        }
+
+        public Label findLabel(string tag)
+        {
+            var controls = this.Controls;
+
+
+            Label label = new Label();
+            Panel p = new Panel();
+            foreach (Control control in controls)
+            {
+                if(control.Tag != null)
+                {
+                    if (control.Tag.ToString() == tag)
+                    {
+                        p = (Panel)control;
+                        break;
+
+                    }
+                }
+            }
+            foreach(Control control in p.Controls)
+            {
+                if(control.Name.ToString().Substring(0, 5) == "label")
+                {
+                    label = (Label)control;
+                }
+
+            }
+            return label;
         }
 
         #endregion
+
+        private void reset_btn_Click(object sender, EventArgs e)
+        {
+            game.reset();
+            turns.Text = game.turn.ToString();
+            checkClear();
+        }
     }
 
 }

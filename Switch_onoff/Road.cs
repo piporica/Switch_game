@@ -33,7 +33,7 @@ namespace Switch_onoff
             isOn = false;
             foreach (Panel p in panels)
             {
-                p.BackColor = Color.Lime;
+                p.BackColor = Color.LimeGreen;
             }
         }
     }
