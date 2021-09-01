@@ -10,7 +10,7 @@ namespace Switch_onoff
 {
     class Road
     {
-        private List<Panel> panels; //노드를 구성하는 패널
+        public List<Panel> panels {get; set;}//노드를 구성하는 패널
         public string id; //양 옆 방 아이디 이어서 쓴 것
         public bool isOn;
 

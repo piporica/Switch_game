@@ -11,3 +11,8 @@ C:\Users\r_bre\source\repos\Switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.pdb
 D:\switch_onoff\Switch_onoff\bin\Debug\Switch_onoff.exe.config
 D:\switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.exe
 D:\switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.pdb
+D:\switch_onoff\Switch_onoff\bin\Debug\Switch_onoff.exe
+D:\switch_onoff\Switch_onoff\bin\Debug\Switch_onoff.pdb
+D:\switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.Switch_game.resources
+D:\switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.Properties.Resources.resources
+D:\switch_onoff\Switch_onoff\obj\Debug\Switch_onoff.csproj.GenerateResource.Cache

@@ -150,6 +150,8 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(98, 59);
             this.panel1.TabIndex = 2;
+            this.panel1.Tag = "01";
+            this.panel1.Click += new System.EventHandler(this.test);
             // 
             // label1
             // 
@@ -161,7 +163,9 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 17);
             this.label1.TabIndex = 24;
+            this.label1.Tag = "01";
             this.label1.Text = "그리핀기숙사";
+            this.label1.Click += new System.EventHandler(this.test);
             // 
             // panel2
             // 
@@ -172,6 +176,8 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(90, 59);
             this.panel2.TabIndex = 3;
+            this.panel2.Tag = "02";
+            this.panel2.Click += new System.EventHandler(this.test);
             // 
             // label2
             // 
@@ -183,7 +189,9 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 17);
             this.label2.TabIndex = 25;
+            this.label2.Tag = "02";
             this.label2.Text = "래번 기숙사";
+            this.label2.Click += new System.EventHandler(this.test);
             // 
             // panel3
             // 
@@ -194,6 +202,8 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(90, 59);
             this.panel3.TabIndex = 3;
+            this.panel3.Tag = "03";
+            this.panel3.Click += new System.EventHandler(this.test);
             // 
             // label3
             // 
@@ -205,7 +215,9 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 17);
             this.label3.TabIndex = 26;
+            this.label3.Tag = "03";
             this.label3.Text = "반장 욕실";
+            this.label3.Click += new System.EventHandler(this.test);
             // 
             // panel4
             // 
@@ -216,6 +228,8 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(90, 59);
             this.panel4.TabIndex = 3;
+            this.panel4.Tag = "04";
+            this.panel4.Click += new System.EventHandler(this.test);
             // 
             // label4
             // 
@@ -227,7 +241,9 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 17);
             this.label4.TabIndex = 27;
+            this.label4.Tag = "04";
             this.label4.Text = "천문탑";
+            this.label4.Click += new System.EventHandler(this.test);
             // 
             // panel5
             // 
@@ -238,6 +254,8 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(112, 59);
             this.panel5.TabIndex = 3;
+            this.panel5.Tag = "05";
+            this.panel5.Click += new System.EventHandler(this.test);
             // 
             // label5
             // 
@@ -249,7 +267,9 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 17);
             this.label5.TabIndex = 25;
+            this.label5.Tag = "05";
             this.label5.Text = "2f 여자화장실";
+            this.label5.Click += new System.EventHandler(this.test);
             // 
             // panel6
             // 
@@ -260,6 +280,8 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(113, 59);
             this.panel6.TabIndex = 3;
+            this.panel6.Tag = "06";
+            this.panel6.Click += new System.EventHandler(this.test);
             // 
             // label6
             // 
@@ -271,7 +293,9 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 17);
             this.label6.TabIndex = 26;
+            this.label6.Tag = "06";
             this.label6.Text = "일반마법 교실";
+            this.label6.Click += new System.EventHandler(this.test);
             // 
             // panel7
             // 
@@ -282,6 +306,8 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(90, 59);
             this.panel7.TabIndex = 3;
+            this.panel7.Tag = "07";
+            this.panel7.Click += new System.EventHandler(this.test);
             // 
             // label7
             // 
@@ -293,7 +319,9 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 17);
             this.label7.TabIndex = 27;
+            this.label7.Tag = "07";
             this.label7.Text = "도서관";
+            this.label7.Click += new System.EventHandler(this.test);
             // 
             // panel8
             // 
@@ -304,6 +332,8 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(109, 79);
             this.panel8.TabIndex = 3;
+            this.panel8.Tag = "08";
+            this.panel8.Click += new System.EventHandler(this.test);
             // 
             // label8
             // 
@@ -315,7 +345,9 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 17);
             this.label8.TabIndex = 26;
+            this.label8.Tag = "08";
             this.label8.Text = "움직이는계단";
+            this.label8.Click += new System.EventHandler(this.test);
             // 
             // panel9
             // 
@@ -326,6 +358,8 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(90, 59);
             this.panel9.TabIndex = 3;
+            this.panel9.Tag = "09";
+            this.panel9.Click += new System.EventHandler(this.test);
             // 
             // label9
             // 
@@ -337,7 +371,9 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(72, 17);
             this.label9.TabIndex = 28;
+            this.label9.Tag = "09";
             this.label9.Text = "3층 복도";
+            this.label9.Click += new System.EventHandler(this.test);
             // 
             // panel10
             // 
@@ -348,6 +384,8 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(90, 59);
             this.panel10.TabIndex = 3;
+            this.panel10.Tag = "10";
+            this.panel10.Click += new System.EventHandler(this.test);
             // 
             // label10
             // 
@@ -359,7 +397,9 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 17);
             this.label10.TabIndex = 29;
+            this.label10.Tag = "10";
             this.label10.Text = "트로피룸";
+            this.label10.Click += new System.EventHandler(this.test);
             // 
             // panel11
             // 
@@ -370,6 +410,8 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(126, 59);
             this.panel11.TabIndex = 3;
+            this.panel11.Tag = "11";
+            this.panel11.Click += new System.EventHandler(this.test);
             // 
             // label12
             // 
@@ -381,7 +423,9 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(64, 17);
             this.label12.TabIndex = 30;
+            this.label12.Tag = "11";
             this.label12.Text = "메인 홀";
+            this.label12.Click += new System.EventHandler(this.test);
             // 
             // panel12
             // 
@@ -392,6 +436,8 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(218, 59);
             this.panel12.TabIndex = 3;
+            this.panel12.Tag = "12";
+            this.panel12.Click += new System.EventHandler(this.test);
             // 
             // label15
             // 
@@ -403,7 +449,9 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(137, 17);
             this.label15.TabIndex = 33;
+            this.label15.Tag = "12";
             this.label15.Text = "어둠의 마법 교실";
+            this.label15.Click += new System.EventHandler(this.test);
             // 
             // panel13
             // 
@@ -414,6 +462,8 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(111, 59);
             this.panel13.TabIndex = 3;
+            this.panel13.Tag = "13";
+            this.panel13.Click += new System.EventHandler(this.test);
             // 
             // label11
             // 
@@ -425,7 +475,9 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(42, 17);
             this.label11.TabIndex = 29;
+            this.label11.Tag = "13";
             this.label11.Text = "주방";
+            this.label11.Click += new System.EventHandler(this.test);
             // 
             // panel14
             // 
@@ -436,6 +488,8 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(90, 59);
             this.panel14.TabIndex = 3;
+            this.panel14.Tag = "14";
+            this.panel14.Click += new System.EventHandler(this.test);
             // 
             // label13
             // 
@@ -447,7 +501,9 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(93, 17);
             this.label13.TabIndex = 31;
+            this.label13.Tag = "14";
             this.label13.Text = "후플기숙사";
+            this.label13.Click += new System.EventHandler(this.test);
             // 
             // panel15
             // 
@@ -458,6 +514,8 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(122, 59);
             this.panel15.TabIndex = 3;
+            this.panel15.Tag = "15";
+            this.panel15.Click += new System.EventHandler(this.test);
             // 
             // label14
             // 
@@ -469,7 +527,9 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(98, 17);
             this.label14.TabIndex = 32;
+            this.label14.Tag = "15";
             this.label14.Text = "마법약 교실";
+            this.label14.Click += new System.EventHandler(this.test);
             // 
             // panel16
             // 
@@ -480,6 +540,8 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(90, 59);
             this.panel16.TabIndex = 3;
+            this.panel16.Tag = "16";
+            this.panel16.Click += new System.EventHandler(this.test);
             // 
             // label16
             // 
@@ -491,7 +553,9 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(98, 17);
             this.label16.TabIndex = 33;
+            this.label16.Tag = "16";
             this.label16.Text = "슬데 기숙사";
+            this.label16.Click += new System.EventHandler(this.test);
             // 
             // panel17
             // 
@@ -502,6 +566,8 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(90, 59);
             this.panel17.TabIndex = 3;
+            this.panel17.Tag = "17";
+            this.panel17.Click += new System.EventHandler(this.test);
             // 
             // label17
             // 
@@ -513,7 +579,9 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(76, 17);
             this.label17.TabIndex = 34;
+            this.label17.Tag = "17";
             this.label17.Text = "타임터너";
+            this.label17.Click += new System.EventHandler(this.test);
             // 
             // needSwitchState_label
             // 
@@ -610,6 +678,7 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(69, 26);
             this.panel20.TabIndex = 14;
+            this.panel20.Tag = "0304";
             // 
             // panel22
             // 
@@ -619,6 +688,7 @@
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(128, 26);
             this.panel22.TabIndex = 16;
+            this.panel22.Tag = "0607";
             // 
             // panel19
             // 
@@ -628,6 +698,7 @@
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(62, 26);
             this.panel19.TabIndex = 13;
+            this.panel19.Tag = "0203";
             // 
             // panel21
             // 
@@ -637,6 +708,7 @@
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(254, 26);
             this.panel21.TabIndex = 15;
+            this.panel21.Tag = "0506";
             // 
             // panel18
             // 
@@ -646,6 +718,7 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(62, 26);
             this.panel18.TabIndex = 12;
+            this.panel18.Tag = "0102";
             // 
             // panel24
             // 
@@ -655,6 +728,7 @@
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(27, 59);
             this.panel24.TabIndex = 17;
+            this.panel24.Tag = "0105";
             // 
             // panel23
             // 
@@ -664,6 +738,7 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(27, 89);
             this.panel23.TabIndex = 16;
+            this.panel23.Tag = "0508";
             // 
             // panel25
             // 
@@ -673,6 +748,7 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(32, 89);
             this.panel25.TabIndex = 18;
+            this.panel25.Tag = "0306";
             // 
             // panel26
             // 
@@ -682,6 +758,7 @@
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(27, 59);
             this.panel26.TabIndex = 18;
+            this.panel26.Tag = "0407";
             // 
             // panel27
             // 
@@ -691,6 +768,7 @@
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(88, 29);
             this.panel27.TabIndex = 17;
+            this.panel27.Tag = "0508";
             // 
             // panel28
             // 
@@ -700,6 +778,7 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(26, 89);
             this.panel28.TabIndex = 18;
+            this.panel28.Tag = "0608";
             // 
             // panel29
             // 
@@ -710,6 +789,7 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(75, 29);
             this.panel29.TabIndex = 19;
+            this.panel29.Tag = "0608";
             // 
             // panel30
             // 
@@ -719,6 +799,7 @@
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(26, 80);
             this.panel30.TabIndex = 19;
+            this.panel30.Tag = "0709";
             // 
             // panel31
             // 
@@ -728,6 +809,7 @@
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(26, 89);
             this.panel31.TabIndex = 19;
+            this.panel31.Tag = "0710";
             // 
             // panel32
             // 
@@ -737,6 +819,7 @@
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(157, 29);
             this.panel32.TabIndex = 20;
+            this.panel32.Tag = "0809";
             // 
             // panel33
             // 
@@ -746,6 +829,7 @@
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(74, 29);
             this.panel33.TabIndex = 20;
+            this.panel33.Tag = "0910";
             // 
             // panel34
             // 
@@ -755,6 +839,7 @@
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(125, 29);
             this.panel34.TabIndex = 21;
+            this.panel34.Tag = "0813";
             // 
             // panel35
             // 
@@ -764,6 +849,7 @@
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(27, 170);
             this.panel35.TabIndex = 17;
+            this.panel35.Tag = "0813";
             // 
             // panel36
             // 
@@ -773,6 +859,7 @@
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(32, 80);
             this.panel36.TabIndex = 19;
+            this.panel36.Tag = "0811";
             // 
             // panel37
             // 
@@ -782,6 +869,7 @@
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(145, 29);
             this.panel37.TabIndex = 21;
+            this.panel37.Tag = "1415";
             // 
             // panel38
             // 
@@ -791,6 +879,7 @@
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(32, 80);
             this.panel38.TabIndex = 20;
+            this.panel38.Tag = "1113";
             // 
             // panel39
             // 
@@ -800,6 +889,7 @@
             this.panel39.Name = "panel39";
             this.panel39.Size = new System.Drawing.Size(32, 101);
             this.panel39.TabIndex = 21;
+            this.panel39.Tag = "1114";
             // 
             // panel40
             // 
@@ -809,6 +899,7 @@
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(153, 29);
             this.panel40.TabIndex = 22;
+            this.panel40.Tag = "1314";
             // 
             // panel41
             // 
@@ -818,6 +909,7 @@
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(134, 29);
             this.panel41.TabIndex = 22;
+            this.panel41.Tag = "1516";
             // 
             // panel42
             // 
@@ -827,6 +919,7 @@
             this.panel42.Name = "panel42";
             this.panel42.Size = new System.Drawing.Size(27, 81);
             this.panel42.TabIndex = 20;
+            this.panel42.Tag = "0912";
             // 
             // panel43
             // 
@@ -836,6 +929,7 @@
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(27, 80);
             this.panel43.TabIndex = 21;
+            this.panel43.Tag = "1215";
             // 
             // panel44
             // 
@@ -845,6 +939,7 @@
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(27, 95);
             this.panel44.TabIndex = 22;
+            this.panel44.Tag = "1216";
             // 
             // panel45
             // 
@@ -854,6 +949,7 @@
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(27, 91);
             this.panel45.TabIndex = 23;
+            this.panel45.Tag = "1617";
             // 
             // reset_btn
             // 

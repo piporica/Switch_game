@@ -59,5 +59,30 @@ namespace Switch_onoff.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   01 02 05
+        ///02 01 03
+        ///03 02 04 06
+        ///04 03 07
+        ///05 01 06 08
+        ///06 03 05 07 08
+        ///07 04 06 09 10
+        ///08 05 06 09 11 13
+        ///09 07 08 10 12
+        ///10 07 09
+        ///11 08 13 14
+        ///12 09 15 16
+        ///13 08 11 14
+        ///14 11 13 15
+        ///15 12 14 16
+        ///16 12 15 17
+        ///17 16과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string data {
+            get {
+                return ResourceManager.GetString("data", resourceCulture);
+            }
+        }
     }
 }
