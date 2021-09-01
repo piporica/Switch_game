@@ -97,6 +97,7 @@ namespace Switch_onoff
                     newList.Add(p);
                     Road newRoad = new Road(id, newList);
                 }
+                p.Click += new EventHandler(test_road);
             }
          }
 
@@ -135,7 +136,7 @@ namespace Switch_onoff
             return roadPanels;
         }
 
-
+        #region events
 
         public void test(object sender, EventArgs e)
         {
@@ -144,6 +145,13 @@ namespace Switch_onoff
         }
 
 
+        public void test_road(object sender, EventArgs e)
+        {
+            string strControlName = ((Control)sender).Tag.ToString();
+            MessageBox.Show(strControlName);
+        }
+
+        #endregion
     }
 
 }
